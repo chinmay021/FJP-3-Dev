@@ -37,7 +37,7 @@ if(localStorage.getItem('tickets')){
 for (let i = 0; i < toolBoxColors.length; i++) {
   toolBoxColors[i].addEventListener("click", function (e) {
     let currentToolBoxColor = toolBoxColors[i].classList[0]; // color
-    //console.log(currentToolBoxColor)
+    // console.log(currentToolBoxColor)
 
     let filteredTickets = ticketsArr.filter(function (ticketObj) {
       return currentToolBoxColor === ticketObj.ticketColor;
