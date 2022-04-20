@@ -25,11 +25,11 @@ export class Todo extends Component {
       ],
       currTask: "",
     });
-  };
+  };cd 
 
   handleDelete = (id) => {
     let narr = this.state.tasks.filter((taskObj) => {
-      return taskObj.id != id;
+      return taskObj.id !== id;
     });
 
     this.setState({
